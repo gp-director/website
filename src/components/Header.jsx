@@ -19,11 +19,13 @@ function Header() {
     { name: 'Products', path: '/products' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Blog', path: '/blog' }
   ]
 
+  // const handleDemoClick = () => {
+  //   alert('Demo booking feature - Connect this to your booking system!')
+  // }
   const handleDemoClick = () => {
-    alert('Demo booking feature - Connect this to your booking system!')
+  window.location.href = '/contact'
   }
 
   return (

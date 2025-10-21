@@ -36,14 +36,12 @@ function Footer() {
               <li><Link to="/products">Products</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h3 className="footer-title">Our Products</h3>
             <ul className="footer-links">
-              <li><span>EHR System</span></li>
               <li><span>Booking System</span></li>
               <li><span>AI Receptionist</span></li>
               <li><span>Roster Management</span></li>

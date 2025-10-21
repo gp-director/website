@@ -3,19 +3,13 @@ import { Link } from 'react-router-dom'
 
 function Home() {
   const stats = [
-    { number: '500+', label: 'Clinics Served' },
+    { number: 'AI', label: 'Powered' },
     { number: '99.9%', label: 'Uptime' },
     { number: '60%', label: 'Admin Reduction' },
     { number: '24/7', label: 'AI Support' }
   ]
 
   const products = [
-    {
-      title: 'Cloud-Native EHR System',
-      description: 'AI-enhanced, Medicare-optimised electronic health records built for Australian clinics.',
-      icon: '📋',
-      features: ['Medicare Integration', 'AI Diagnostics', 'Cloud Security']
-    },
     {
       title: 'Appointment Booking',
       description: 'Seamless online booking system that integrates with your clinic workflow.',
@@ -33,6 +27,12 @@ function Home() {
       description: 'Intelligent staff scheduling and resource allocation for optimal clinic operations.',
       icon: '👥',
       features: ['Smart Scheduling', 'Resource Allocation', 'Staff Optimization']
+    },
+    {
+      title: 'IT Support',
+      description: 'Comprehensive IT support services to keep clinic systems running smoothly 24/7.',
+      icon: '🔧',
+      features: ['24/7 Support', 'System Monitoring', 'Security Updates']
     }
   ]
 
@@ -77,21 +77,20 @@ function Home() {
               </h1>
               <p className="hero-description">
                 Transform your healthcare practice with our comprehensive AI-powered solutions.
-                From electronic health records to intelligent scheduling, we're revolutionising Australian healthcare delivery.
+                From intelligent patient communication to intelligent scheduling, we're revolutionising Australian healthcare delivery.
               </p>
               <div className="hero-buttons">
+                <a href="/contact" style={{ textDecoration: 'none' }}>
                 <button className="btn btn-primary btn-large">
-                  Book a Demo →
+                 Contact Us →
                 </button>
-                <button className="btn btn-outline btn-large">
-                  Contact Us
-                </button>
+                </a>
               </div>
               <div className="hero-trust">
                 <div className="stars">
                   {'★'.repeat(5)}
                 </div>
-                <span>Trusted by 500+ Australian clinics</span>
+                <span>Trusted by Leading Australian clinics</span>
               </div>
             </motion.div>
 
@@ -184,7 +183,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section
       <section className="testimonials">
         <div className="container">
           <motion.div
@@ -221,7 +220,7 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="cta">
@@ -238,13 +237,12 @@ function Home() {
               improve patient care and streamline operations.
             </p>
             <div className="cta-buttons">
-              <button className="btn btn-secondary btn-large">
-                Book Your Demo Today →
-              </button>
-              <button className="btn btn-outline-white btn-large">
-                Contact Sales
-              </button>
-            </div>
+            <a href="/contact" style={{ textDecoration: 'none' }}>
+            <button className="btn btn-secondary btn-large">
+              Book Your Demo Today →
+            </button>
+            </a>
+          </div>
           </motion.div>
         </div>
       </section>

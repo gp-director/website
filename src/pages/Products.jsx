@@ -3,32 +3,6 @@ import { motion } from 'framer-motion'
 function Products() {
   const products = [
     {
-      id: 'ehr',
-      title: 'Cloud-Native EHR System',
-      subtitle: 'AI-Enhanced Electronic Health Records',
-      description: 'Our comprehensive EHR system is specifically designed for Australian healthcare providers, featuring Medicare integration, AI-powered diagnostics, and robust security compliance.',
-      icon: '📋',
-      color: 'blue',
-      features: [
-        'Medicare & PBS Integration',
-        'AI-Powered Clinical Decision Support',
-        'Real-time Patient Data Sync',
-        'HIPAA & Privacy Act Compliant',
-        'Mobile-First Design',
-        'Automated Billing & Claims',
-        'Clinical Templates & Workflows',
-        'Prescription Management',
-        'Lab Results Integration',
-        'Audit Trail & Reporting'
-      ],
-      benefits: [
-        'Reduce documentation time by 40%',
-        'Improve diagnostic accuracy',
-        'Streamline Medicare billing',
-        'Enhance patient safety'
-      ]
-    },
-    {
       id: 'booking',
       title: 'Appointment Booking System',
       subtitle: 'Seamless Patient Scheduling',
@@ -158,10 +132,6 @@ function Products() {
                     ))}
                   </div>
                 </div>
-
-                <button className="btn btn-primary">
-                  Learn More →
-                </button>
               </div>
 
               <div className="product-detail-features">
@@ -199,7 +169,7 @@ function Products() {
 
           <div className="integration-grid">
             {[
-              { icon: '🛡️', title: 'HIPAA Compliant', description: 'Full compliance with healthcare privacy regulations' },
+              { icon: '🛡️', title: 'Data Compliant', description: 'Built for Australian healthcare standards' },
               { icon: '🔄', title: 'Real-time Sync', description: 'Instant data synchronization across all platforms' },
               { icon: 'AI', title: 'AI-Powered', description: 'Advanced machine learning for intelligent automation' },
               { icon: '💬', title: '24/7 Support', description: 'Round-the-clock technical support and monitoring' }
@@ -233,12 +203,11 @@ function Products() {
               Book a personalized demo and discover how our solutions can transform your healthcare practice.
             </p>
             <div className="cta-buttons">
-              <button className="btn btn-secondary btn-large">
-                Book a Demo →
-              </button>
-              <button className="btn btn-outline-white btn-large">
-                Contact Sales
-              </button>
+            <a href="/contact" style={{ textDecoration: 'none' }}>
+            <button className="btn btn-secondary btn-large">
+             Book a Demo →
+            </button>
+            </a>
             </div>
           </motion.div>
         </div>

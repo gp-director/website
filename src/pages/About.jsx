@@ -30,7 +30,7 @@ function About() {
             transition={{ duration: 0.8 }}
             className="about-section"
           >
-            <h2>Our Story</h2>
+          <h2>Our Story</h2>
             <p>
               Founded by healthcare professionals and technology innovators, GP Director was born
               from a simple observation: Australian healthcare practices needed better tools to manage
@@ -38,8 +38,9 @@ function About() {
               defines quality care.
             </p>
             <p>
-              Today, we serve over 500 clinics across Australia, helping them streamline operations,
-              reduce administrative burden, and focus on what matters most—their patients.
+              Built on ideas from doctors, for doctors, GP Director continues to bridge the gap between
+              clinical insight and technology - helping practices streamline operations, reduce administrative
+              burden, and focus on what matters most - their patients.
             </p>
           </motion.div>
 
@@ -100,16 +101,16 @@ function About() {
           >
             <h2 className="cta-title">Join Our Growing Community</h2>
             <p className="cta-description">
-              Become part of the 500+ Australian clinics transforming healthcare delivery with GP Director.
+              Become part of the Australian clinics revolutionizing healthcare delivery with GP Director.
             </p>
             <div className="cta-buttons">
-              <button className="btn btn-secondary btn-large">
-                Get Started →
-              </button>
-              <button className="btn btn-outline-white btn-large">
-                Contact Us
-              </button>
-            </div>
+            <button 
+            className="btn btn-secondary btn-large"
+            onClick={() => window.location.href = '/contact'}
+             >
+           Get Started →
+             </button>
+          </div>
           </motion.div>
         </div>
       </section>
